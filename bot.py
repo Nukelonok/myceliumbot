@@ -19,7 +19,7 @@ while True:
                           {"peer_id": id, "message": "Привет, напиши узнать", "random_id": random.randint(1, 2147483647)})
             elif body.lower() == "узнать":
                 vk.method("messages.send",
-                          {"peer_id": id, "message": "ютуб!", "random_id": random.randint(1, 2147483647)})
+                          {"peer_id": id, "message": "ютуб - https://www.youtube.com/channel/UCYW9GvUWhyTIbEhgts3MIqA", "random_id": random.randint(1, 2147483647)})
             elif body.lower() == "ты дурак":
                 vk.method("messages.send",
                           {"peer_id": id, "message": "не обзывайся", "random_id": random.randint(1, 2147483647)})
