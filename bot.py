@@ -23,7 +23,10 @@ while True:
             elif body.lower() == "ты дурак":
                 vk.method("messages.send",
                           {"peer_id": id, "message": "не обзывайся", "random_id": random.randint(1, 2147483647)})
-
+            elif body.lower() == "Я Аня Нефедова":
+                vk.method("messages.send",
+                          {"peer_id": id, "message": "Ты красотка!", "random_id": random.randint(1, 2147483647)})
+             
             else:
                 vk.method("messages.send",
                           {"peer_id": id, "message": "Не понял тебя!", "random_id": random.randint(1, 2147483647)})
